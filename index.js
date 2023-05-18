@@ -40,7 +40,7 @@ async function run() {
          const cursor = database.find()
          const result = await cursor.toArray()
          res.send(result);
-      })
+      });
 
 
 
