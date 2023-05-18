@@ -1,0 +1,101 @@
+[
+   {
+      "sellerName": "John Doe",
+      "email": "john.doe@example.com",
+      "toyName": "Super Robot",
+      "category": "babyDolls",
+      "toyImgUrl": "https://i.ibb.co/sFySDJW/babydoll1.jpg",
+      "price": 29.99,
+      "quantity": 10,
+      "details": "Description: Introducing Baby Stella, the perfect first baby doll for young children. This soft and cuddly doll has a lifelike appearance.",
+      "rating": 4.5
+   },
+   {
+      "sellerName": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "toyName": "Unicorn Plush",
+      "category": "babyDolls",
+      "toyImgUrl": "https://i.ibb.co/RhT5hhT/babydoll2.jpg",
+      "price": 14.99,
+      "quantity": 5,
+      "details": "The Adora PlayTime Baby Doll is designed for hours of imaginative play. This doll has a huggable, lightweight body, making it easy for little ones to carry and cuddle.",
+      "rating": 4.2
+   },
+   {
+      "sellerName": "nike tong",
+      "email": "nike .tongson@example.com",
+      "toyName": "taty Station",
+      "category": "babyDolls",
+      "toyImgUrl": "https://i.ibb.co/0VZpDPT/babydoll3.jpg",
+      "price": 39.99,
+      "quantity": 3,
+      "details": "The JC Toys La Baby Doll is a lifelike baby doll that's perfect for nurturing play. It has a realistic facial expression, soft body, and movable arms, legs, and head.",
+      "rating": 4.9
+   },
+   {
+      "sellerName": "Mike Johnson",
+      "email": "mike.johnson@example.com",
+      "toyName": "LEGO City Police Station",
+      "category": "barbieDolls",
+      "toyImgUrl": "https://i.ibb.co/9sLrKCL/barbie-Dolls1.jpg",
+      "price": 59.99,
+      "quantity": 3,
+      "details": "The Barbie Dreamplane Playset is a travel-themed playset that lets kids imagine exciting adventures for Barbie. It includes a Barbie doll.",
+      "rating": 4.8
+   },
+   {
+      "sellerName": "Emily Brown",
+      "email": "emily.brown@example.com",
+      "toyName": "Barbie Dreamhouse",
+      "category": "barbieDolls",
+      "toyImgUrl": "https://i.ibb.co/qdMzRJj/barbie-Dolls2.jpg",
+      "price": 99.99,
+      "quantity": 2,
+      "details": "The Barbie Dreamtopia Unicorn Styling Head is a toy that allows kids to get creative with hairstyling. It features a unicorn-shaped head with long.",
+      "rating": 4.7
+   },
+   {
+      "sellerName": "David Wilson",
+      "email": "david.wilson@example.com",
+      "toyName": "Nerf N-Strike Elite Disruptor",
+      "category": "barbieDolls",
+      "toyImgUrl": "https://i.ibb.co/98x1PZs/barbie-Dolls3.jpg",
+      "price": 49.99,
+      "quantity": 10,
+      "details": "The Barbie Fashionista Doll is part of the diverse and inclusive Barbie line. It features a stylishly dressed Barbie doll with different body types, skin tones.",
+      "rating": 4.6
+   },
+   {
+      "sellerName": "mike john",
+      "email": "mike.john@example.com",
+      "toyName": "park harbal",
+      "category": "amiricanDolls",
+      "toyImgUrl": "https://i.ibb.co/TTG4fBX/americandoll1.jpg",
+      "price": 19.99,
+      "quantity": 8,
+      "details": "Meet Grace Thomas, an adventurous and aspiring young baker! Grace comes with beautiful hazel eyes, long dark hair, and a huggable cloth body.",
+      "rating": 4.6
+   },
+   {
+      "sellerName": "Sarah Thompson",
+      "email": "sarah.thompson@example.com",
+      "toyName": "Paw Patrol Adventure Bay Play Table",
+      "category": "amiricanDolls",
+      "toyImgUrl": "https://i.ibb.co/xDx1vP2/americandoll2.jpg",
+      "price": 39.99,
+      "quantity": 6,
+      "details": " Introducing Gabriela McBride, a talented and creative girl who loves expressing herself through poetry and dance! Gabriela has curly dark-brown hair and warm brown eyes. ",
+      "rating": 4.4
+   },
+   {
+      "sellerName": "Spdish kk",
+      "email": "spadish.kk@example.com",
+      "toyName": "bet ti ka",
+      "category": "amiricanDolls",
+      "toyImgUrl": "https://i.ibb.co/gryWLyB/americandoll3.jpg",
+      "price": 59.99,
+      "quantity": 11,
+      "details": "Discover Luciana Vega, a young aspiring astronaut with dreams of exploring space! Luciana has medium skin, brown eyes, and dark-brown hair with purple streaks.",
+      "rating": 4.7
+   }
+]

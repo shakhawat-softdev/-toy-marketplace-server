@@ -34,6 +34,14 @@ async function run() {
    try {
       // Connect the client to the server	(optional starting in v4.7)
       await client.connect();
+      const database = client.db("toyDB").collection("toys")
+
+      app.get('/dolls', async (req, res) => {
+         const cursor = database.find()
+         const result = await cursor.toArray()
+         res.send(result);
+      })
+
 
 
 
