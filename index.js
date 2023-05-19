@@ -78,6 +78,24 @@ async function run() {
          res.send(result)
       });
 
+      //update
+      app.patch('/doll/:id', async (req, res) => {
+         const id = req.params.id;
+         const filter = { _id: new ObjectId(id) }
+         const updatedDoll = req.body;
+
+         console.log(updatedDoll);
+
+         const updateDoc = {
+            $set: {
+               price: updatedDoll.price,
+               quantity: updatedDoll.quantity,
+               details: updatedDoll.details
+            },
+         };
+         const result = await database.updateOne(filter, updateDoc);
+         res.send(result)
+      })
 
 
       // Send a ping to confirm a successful connection
