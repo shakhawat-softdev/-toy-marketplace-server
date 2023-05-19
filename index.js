@@ -70,8 +70,9 @@ async function run() {
       });
 
       //delete
-      app.get('/dolls/:id', async (req, res) => {
+      app.delete('/doll/:id', async (req, res) => {
          const id = req.params.id;
+         console.log(id);
          const query = { _id: new ObjectId(id) }
          const result = await database.deleteOne(query)
          res.send(result)
