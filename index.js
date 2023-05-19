@@ -10,12 +10,12 @@ const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cors())
 
+//all collection
 app.get('/', (req, res) => {
    res.send('Toy Marketplace Server is Running............')
 });
 
-//toyMarketPlace
-//s7MDztA2cLdlEodQ
+
 
 
 
@@ -41,6 +41,12 @@ async function run() {
          const result = await cursor.toArray()
          res.send(result);
       });
+
+      //specific item
+      app.get('/dolls/:id', async (req, res) => {
+         const id = req.params.id;
+         console.log(id);
+      })
 
 
 
