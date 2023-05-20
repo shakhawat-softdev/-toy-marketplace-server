@@ -87,17 +87,18 @@ async function run() {
          }
          const result = await database.find(query).sort({ price: 1 }).toArray();
          res.send(result)
+      });
+
+      // sort by low to High Price
+      app.get('/dollBysortTwo', async (req, res) => {
+         console.log(req.query);
+         let query = {};
+         if (req.query?.email) {
+            query = { email: req.query.email }
+         }
+         const result = await database.find(query).sort({ price: -1 }).toArray();
+         res.send(result)
       })
-      //sort by high to low
-      // app.get('/dollBysortTwo', async (req, res) => {
-      //    console.log(req.query);
-      //    let query = {};
-      //    if (req.query?.email) {
-      //       query = { email: req.query.email }
-      //    }
-      //    const result = await database.find(query).sort({ price: -1 }).toArray();
-      //    res.send(result)
-      // })
 
 
 
