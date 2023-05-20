@@ -37,6 +37,7 @@ async function run() {
       const indexOptions = { name: "toyName" };
       const result = await database.createIndex(indexKeys, indexOptions)
 
+      //search by name
       app.get('/toySearchByName/:text', async (req, res) => {
          const searchText = req.params.text;
          console.log(searchText)
@@ -49,9 +50,9 @@ async function run() {
          }).toArray();
 
          res.send(result)
-      })
+      });
 
-
+      //all dolls
       app.get('/dolls', async (req, res) => {
          const cursor = database.find()
          const result = await cursor.toArray()
@@ -66,7 +67,7 @@ async function run() {
          res.send(user)
       });
 
-      //get Specific item by emeil
+      //get Specific item by emeil and sort
       app.get('/doll', async (req, res) => {
          console.log(req.query);
          let query = {};
@@ -75,9 +76,30 @@ async function run() {
          }
          const result = await database.find(query).toArray();
          res.send(result)
-
-
       })
+
+      //sort by  low to high
+      app.get('/dollBysort', async (req, res) => {
+         console.log(req.query);
+         let query = {};
+         if (req.query?.email) {
+            query = { email: req.query.email }
+         }
+         const result = await database.find(query).sort({ price: 1 }).toArray();
+         res.send(result)
+      })
+      //sort by high to low
+      // app.get('/dollBysortTwo', async (req, res) => {
+      //    console.log(req.query);
+      //    let query = {};
+      //    if (req.query?.email) {
+      //       query = { email: req.query.email }
+      //    }
+      //    const result = await database.find(query).sort({ price: -1 }).toArray();
+      //    res.send(result)
+      // })
+
+
 
 
       //insert data
